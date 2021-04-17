@@ -46,19 +46,10 @@
             <section class="hero-section">
                 <div class="container hero-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="button hero-button" type="button" data-modal-open>Заказать услугу</button>
+                    <button class="button main-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="button close-button" type="button" data-modal-close> 
-                        <svg class="close-img " width="11" height="11">
-                            <use href="./images/sprite.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                </div> 
-            </div>
 
             <section class="features-section">
                 <div class="container features-container">
@@ -330,58 +321,134 @@
                 </div>
             </section>
 
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="button close-button" type="button" data-modal-close>
+                        <svg class="close-img " width="18" height="18">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form class="form-order">
+                        <div class="form-field">
+                            <label class="form-field-label" for="customer-name">Имя</label>
+                            <input class="form-field-input" type="text" id="customer-name" name="name" placeholder="" max="25" required>
+                            <svg class="form-field-icon icon-person" widht="18" height="18">
+                                <use href="./images/sprite.svg#icon-person"></use>
+                            </svg>
+                        </div> 
+                        <div class="form-field">
+                            <label class="form-field-label" for="customer-phone">Телефон</label>
+                            <input class="form-field-input" type="tel" id="customer-phone" name="phone" placeholder="" max="10" required>
+                            <svg class="form-field-icon icon-phone" widht="18" height="18">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field-label" for="customer-email">Почта</label>
+                            <input class="form-field-input" type="email" id="customer-email" name="email" placeholder="" max="25" required>
+                            <svg class="form-field-icon icon-email" widht="18" height="18">
+                                <use href="./images/sprite.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-field-label" for="customer-comment">Комментарий</label>
+                            <textarea class="form-field-input form-comment" id="customer-comment" name="comment" placeholder="Введите текст"></textarea>
+                        </div>
+                        <div class="form-field form-field-checkbox">
+                            <label class="form-text" for="checkbox">
+                                <input class="form-checkbox" type="checkbox" id="checkbox" name="check-conditions">
+                                <svg class="icon-check" widht="16" height="15">
+                                    <use href="./images/sprite.svg#icon-check"></use>
+                                </svg> 
+                                Соглашаюсь с рассылкой и принимаю <a class="form-link-conditions" href="">Условия договора</a> 
+                            </label>
+                        </div>
+                        <button class="button main-button form-button-submit" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            
         </main>
-
+        
         <footer class="footer-section">
             <div class="container footer-container">
                 <div class="footer-contacts">
                     <a href="./index.html" class="logo link">Web<span class="logo-down">Studio</span></a>
                     <address class="footer-address">
                         <ul class="list footer-list">
-                            <li class="footer-address-item"><a class="link contact-footer-color"
-                                    href="https://goo.gl/maps/jDDkmHE5Bs7uJv8Z7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
-                                    Леси Украинки, 26</a></li>
-                            <li class="footer-address-item"><a class="link contact-footer-link" href="info@example.com">info@example.com</a></li>
-                            <li class="footer-address-item"><a class="link contact-footer-link" href="+380991111111">+38 099 111 11 11</a></li>
+                            <li class="footer-address-item"><a class="link footer-contact-color"
+                                href="https://goo.gl/maps/jDDkmHE5Bs7uJv8Z7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
+                                Леси Украинки, 26</a></li>
+                            <li class="footer-address-item"><a class="link footer-contact-link" href="info@example.com">info@example.com</a></li>
+                            <li class="footer-address-item"><a class="link footer-contact-link" href="+380991111111">+38 099 111 11 11</a></li>
                         </ul>
                     </address>
                 </div>
-                <div class="footer-social">
-                    <h3 class="footer-subtitle">присоединяйтесь</h3>
-                    <ul class="list footer-social-list">
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                                <svg class="footer-social-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="twitter">
-                                <svg class="footer-social-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-                                <svg class="footer-social-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                                <svg class="footer-social-icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="footer-social">
+                        <h3 class="footer-subtitle">присоединяйтесь</h3>
+                        <ul class="list footer-social-list">
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    <svg class="footer-social-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="subscribe-section">
+                            <h3 class="footer-subtitle">Подпишитесь на рассылку</h3>
+                            <form class="form-subscribe">
+                                <!-- <label  for="mail-subscribe">Имя</label> -->
+                                <input type="email" name="email-subscribe" class="mail-subscribe" id="mail-subscribe" placeholder="E-mail">
+                                <button class="button main-button button-subscribe-submit" type="submit">Подписаться
+                                    <svg class="icon-send" widht="24" height="24">
+                                        <use href="./images/sprite.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                    </section>
                 </div>
-            </div>
-        </footer>
 
-        <script src="./js/modal.js"></script>
-    </body>
-</html>
+            </footer>
+            
+            <!-- <script>
+                (() => {
+                    .querySelector('.js-speaker-form')
+                    .addEventListener('submit', e => {
+                        e.preventDefault();
+
+                        new FormData(e.currentTarget).forEach((value,name) =>
+                            console.log('${name}: ${value}' ),
+                        );
+
+                        e.currentTarget.reset();                        
+                    });
+                }) ();
+            </script> -->
+
+            <script src="./js/modal.js"></script>
+        </body>
+        </html>

@@ -211,13 +211,13 @@
                     <a href="./index.html" class="logo link">Web<span class="logo-down">Studio</span></a>
                     <address class="footer-address">
                         <ul class="list footer-list">
-                            <li class="footer-address-item"><a class="link contact-footer-color"
+                            <li class="footer-address-item"><a class="link footer-contact-color"
                                     href="https://goo.gl/maps/jDDkmHE5Bs7uJv8Z7" target="_blank" rel="noopener noreferrer">г.
                                     Киев, пр-т
                                     Леси Украинки, 26</a></li>
-                            <li class="footer-address-item"><a class="link contact-footer-link"
+                            <li class="footer-address-item"><a class="link footer-contact-link"
                                     href="info@example.com">info@example.com</a></li>
-                            <li class="footer-address-item"><a class="link contact-footer-link" href="+380991111111">+38 099 111
+                            <li class="footer-address-item"><a class="link footer-contact-link" href="+380991111111">+38 099 111
                                     11 11</a></li>
                         </ul>
                     </address>
@@ -259,7 +259,21 @@
                         </li>
                     </ul>
                 </div>
+                <section class="subscribe-section">
+                    <h3 class="footer-subtitle">Подпишитесь на рассылку</h3>
+                    <form class="form-subscribe">
+                        <!-- <label  for="mail-subscribe">Имя</label> -->
+                        <input type="email" name="email-subscribe" class="mail-subscribe" id="mail-subscribe"
+                            placeholder="E-mail">
+                        <button class="button main-button button-subscribe-submit" type="submit">Подписаться
+                            <svg class="icon-send" widht="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </section>
             </div>
+        
         </footer>
 
         <script src="./js/modal.js"></script>
