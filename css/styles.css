@@ -675,6 +675,7 @@ img {
 }
 
 .form-text .form-link-conditions {
+  margin-left: 5px;
   color: var(--accent-color);
   text-decoration-line: underline;
 }
@@ -700,6 +701,7 @@ img {
   margin-right: 7px;
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
+  transition: border 250ms var(--timing-function);
 }
 
 .form-checkbox:checked + .icon-check {
